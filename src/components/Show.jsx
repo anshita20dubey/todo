@@ -1,6 +1,8 @@
-const Show = (props) => {
-    const tasks = props.tasks;
-    const settasks = props.settasks;
+import { useContext } from "react";
+import { taskscontext } from "../Context/TasksContext";
+
+const Show = () => {
+    const [tasks,settasks] = useContext(taskscontext);
     const completeHandler = (index) => {
         // console.log(index);
         const copytasks = [...tasks];

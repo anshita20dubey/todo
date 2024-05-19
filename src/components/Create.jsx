@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { nanoid } from "nanoid";
+import { taskscontext } from "../Context/TasksContext";
 
-const Create = (props)=>{
-    const tasks = props.tasks;
-    const settasks = props.settasks;
+const Create = ()=>{
+    const [tasks,settasks] = useContext(taskscontext);
     const [title,settitle] = useState("");
     
     const submitHandler = (e) => {
