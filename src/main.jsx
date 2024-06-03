@@ -5,7 +5,7 @@ import TasksContext from './Context/TasksContext.jsx'
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
- <TasksContext>
-   <App/>
- </TasksContext>
+  <TasksContext>
+    <App />
+  </TasksContext>
 );
